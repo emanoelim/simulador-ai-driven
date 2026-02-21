@@ -1,6 +1,6 @@
-# Simulador IA Driven
+# Simulador AI Driven
 
-Projeto criado com intuito de estudar a criação de skills para IA, de modo a desenvolver uma API REST com auxílio de IA desde a fase da criação da tarefa.
+This project was created with the aim of studying the creation of AI skills, in order to develop a REST API with the help of AI from the task creation phase.
 
 ## Skills
 
