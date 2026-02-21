@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Python compilation files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# VS Code environment
+.vscode/
