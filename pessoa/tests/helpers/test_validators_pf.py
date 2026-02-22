@@ -1,9 +1,9 @@
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 from datetime import date, timedelta
-from pessoa.helpers.validators import validate_cpf, validate_data_nascimento
+from pessoa.helpers.validators_pf import validate_cpf, validate_data_nascimento
 
-class ValidatorsTestCase(TestCase):
+class ValidatorsPFTestCase(TestCase):
     def test_validate_cpf_with_invalid_length(self):
         with self.assertRaises(ValidationError) as context:
             validate_cpf('1234567890')

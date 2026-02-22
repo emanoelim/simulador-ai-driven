@@ -189,17 +189,6 @@ The following are not allowed:
 
 ---
 
----
-
-## Stack
-
-- Backend Framework: Django
-- API Framework: Django REST Framework
-- Primary Key Strategy: UUID (default=uuid.uuid4, editable=False)
-- Transaction Handling: django.db.transaction.atomic
-
----
-
 # API Layer Standards
 
 - Prefer ModelViewSet unless strong reason not to.

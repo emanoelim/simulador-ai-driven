@@ -13,7 +13,8 @@ The agent must:
   - docs/stack_definition.md
 - Identify violations, inconsistencies, and architectural weaknesses.
 - Provide structured feedback.
-- NOT modify any files.
+- DO NOT create a file with the review, just output the review in the chat.
+- DO NOT modify any files before asking for permission.
 
 ---
 

@@ -17,6 +17,15 @@ This project uses a structured AI-driven workflow composed of four stages:
 
 Each stage must be executed in order.
 
+## 1.1 Roles Mapping
+
+| Stage                | Role Equivalent |
+|----------------------|----------------|
+| create_task          | Product / PM   |
+| technical_analysis   | Senior Dev     |
+| architectural_review | Architect      |
+| execute_task         | Developer      |
+
 ---
 
 # 2. Workflow Diagram

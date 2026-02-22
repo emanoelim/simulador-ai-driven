@@ -1,6 +1,7 @@
 from django.db import transaction
 from pessoa.models import PessoaFisica
 from datetime import date
+from django.core.exceptions import ValidationError
 
 class UpdatePessoaFisicaUseCase:
     """
@@ -14,7 +15,10 @@ class UpdatePessoaFisicaUseCase:
         pessoa_fisica.data_nascimento = data_nascimento
         
         # Executa validações de modelo internamente antes de salvar
-        pessoa_fisica.full_clean()
-        
+        try:
+            pessoa_fisica.full_clean()
+        except ValidationError as e:
+            raise e
+            
         pessoa_fisica.save()
         return pessoa_fisica

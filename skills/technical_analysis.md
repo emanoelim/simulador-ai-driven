@@ -6,7 +6,7 @@ Transform a product task into a detailed technical implementation plan.
 This analysis must follow:
 - docs/architectural_standard.md
 - docs/stack_definition.md
-- docs/test_standard.md
+- docs/test_standard.md.
 
 ---
 

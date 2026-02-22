@@ -3,7 +3,7 @@
 ## Objective
 Transform a high-level request into a structured product task specification.
 
-Do NOT propose technical implementation.
+Do NOT propose technical implementation. 
 Do NOT propose database modeling.
 Do NOT propose architecture.
 Focus only on business requirements.

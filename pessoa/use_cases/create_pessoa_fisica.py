@@ -1,4 +1,5 @@
 from django.db import transaction
+from django.core.exceptions import ValidationError
 from pessoa.models import Pessoa, PessoaFisica
 from datetime import date
 
@@ -25,9 +26,13 @@ class CreatePessoaFisicaUseCase:
             data_nascimento=data_nascimento
         )
         
-        # 3. Executa as validações do modelo de dados
-        pessoa_fisica.full_clean()
-        
+        # O método full_clean executará todas as validações de modelo, incluindo o validate_cpf customizado
+        try:
+            pessoa_fisica.full_clean()
+        except ValidationError as e:
+            # Re-raise the error so the atomic transaction rolls back the base `Pessoa`
+            raise e
+            
         # 4. Persiste no banco de dados
         pessoa_fisica.save()
         
